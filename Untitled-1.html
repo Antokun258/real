@@ -1,0 +1,264 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta name="author" content="" />
+<meta name="description" content="" />
+<meta name="keywords" content="発車標,発車案内,電光掲示板" />
+<title>JR西日本 琵琶湖線/JR京都線/JR神戸線(大阪駅) 発車標(電光掲示板) 発車標シミュレーター</title>
+
+<link rel="stylesheet" href="../../../style2.css" type="text/css">
+
+<style type="text/css">
+body{
+	}
+</style>
+
+
+<script type="text/javascript" src="main.js" charset="UTF-8"></script> <!--javascript読み込み-->
+<script type="text/javascript" src="judgeOSBrowser.js" charset="UTF-8"></script> <!--javascript読み込み-->
+<script type="text/javascript" src="imgTitleList.js" charset="UTF-8"></script> <!--javascript読み込み-->
+<script type="text/javascript" src="jrw-tokaido-20140315.js" charset="UTF-8"></script> <!--javascript読み込み-->
+<script type="text/javascript" src="diaTypeJudge.js" charset="UTF-8"></script> <!--javascript読み込み-->
+<script type="text/javascript" src="../offerSectionWrite.js" charset="UTF-8"></script> <!--javascript読み込み-->
+
+<script type="text/javascript">
+
+</script>
+
+</head>
+
+<body>
+
+<a href="../../../index.htm">TOP</a> &gt; <a href="../index.htm">発車標シミュレーター</a> &gt; JR西日本 琵琶湖線/JR京都線/JR神戸線(大阪駅)
+<hr />
+<div style="position:relative; height:20px; ">
+</div>
+
+<div style="position:relative; height:150px; ">
+  <div style="position:absolute; left:0px;">
+    <script type="text/javascript">	writeKyotaiDivHTML(0);	</script>
+  </div>
+  <div style="position:absolute; left:400px;">
+    <script type="text/javascript">	writeKyotaiDivHTML(1);	</script>
+  </div>
+</div>
+
+<div style="position:relative; height:150px; ">
+  <div style="position:absolute; left:0px;">
+    <script type="text/javascript">	writeKyotaiDivHTML(2);	</script>
+  </div>
+  <div style="position:absolute; left:400px;">
+    <script type="text/javascript">	writeKyotaiDivHTML(3);	</script>
+  </div>
+  <div style="position:absolute; left:800px;">
+    <script type="text/javascript">	writeKyotaiDivHTML(4);	</script>
+  </div>
+</div>
+<hr />
+
+
+日本語:<input id="langSwicthIntervalInput0" type="text" value="10.0" size="4" style="font-size:16px;" onkeyup="readInput()" />秒　
+英語:<input id="langSwicthIntervalInput1" type="text" value="5.0" size="4" style="font-size:16px;" onkeyup="readInput()" />秒　　
+<br />
+<hr />
+<input type="radio" name="runningDayRadioButton" id="weekdayRadioButton" onclick="getTimetableTrainData()" checked /><label for="weekdayRadioButton">平日ダイヤ</label>
+<input type="radio" name="runningDayRadioButton" id="holidayRadioButton" onclick="getTimetableTrainData()" /><label for="holidayRadioButton">土・休日ダイヤ</label>
+　　
+<span style='white-space: nowrap;'>
+設定時刻 : 
+<input id='timeHourInput' type='text' value='12' size='2' maxlength='2' style='font-size:16px; text-align:right; ' onkeyup='' />
+時
+<input id='timeMinuteInput' type='text' value='34' size='2' maxlength='2' style='font-size:16px; text-align:right; ' onkeyup='' />
+分
+<input id='timeSecondInput' type='text' value='56' size='2' maxlength='2' style='font-size:16px; text-align:right; ' onkeyup='' />
+秒
+<input id="setTimeInput" type="button" value="入力した時刻で表示更新" onclick="getTimetableTrainData()" />
+( <input id="setTimeCheckbox" type="checkbox" name="example" value="" onclick="updateTimeInputStatus();getTimetableTrainData();" checked><label for="setTimeCheckbox">自動更新</label> )　　
+<input id="animetionButton" type="button" value="早送りON/OFF" onclick="updateAnimetion()" />
+</span>
+<br />
+<hr />
+
+<script type="text/javascript">	writeControlHTML(0);	</script>
+<script type="text/javascript">	writeControlHTML(1);	</script>
+<script type="text/javascript">	writeControlHTML(2);	</script>
+<script type="text/javascript">	writeControlHTML(3);	</script>
+<script type="text/javascript">	writeControlHTML(4);	</script>
+<hr />
+
+
+
+<script type="text/javascript">	main();	</script>
+
+<h2>このシステムについて</h2>
+<img src="img/pic/IMG_8486.JPG" alt="発車標(電光掲示板,発車案内)" /><br />
+JR西日本の琵琶湖線・JR京都線・JR神戸線系統のシステムで動いている発車標(LED電光掲示板)の表示をリアルタイムで再現、および自由に変更できるシミュレーターを作りました。<br />
+<ul>
+<li>琵琶湖線・JR京都線・JR神戸線内で最も主要な駅である大阪駅をモデルとして再現しています。</li>
+<li>お使いの端末に設定されている時刻を元にして、リアルタイムで表示させています。また、下のフォームから任意の表示を設定することもできます。</li>
+<li>ダイヤについては平日・土休日両方とも対応しています。また、平成26年3月15日改正のデータを利用しています。</li>
+<li>一部の行き先についてはLEDでの表示が未確認ですので表示されないようになっています。</li>
+<li>概ね正しいダイヤデータが入力されていることは確認しましたが、一部に不備があることも考えられますので、参考程度にお楽しみください。</li>
+<li>終電が発車してから午前3時までは無表示となります。午前3時以降に翌日のダイヤに切り替わります。</li>
+<li>各列車の両数についての情報は通常は手に入らないため、このシステムにおいては、新快速は12両(白△１〜12)、快速は8両(黄↑３〜10)、普通は7両(白○１〜７または白◇１〜７)として設定しています。</li>
+<li>時刻表には掲載されていない非営業系の列車(貨物・回送ほか)の情報も通常は手に入らないため、このシステムでは表示されません。</li>
+<li>大阪駅の発車標では5段目に常にテロップが表示されていますが、ここでは表示させず、常に5本の列車を表示させています。</li>
+<li>列車名と乗車位置の情報が両方とも入力されている場合、交互に表示されるようにしています。</li>
+<li>遅れ時分と到着までの時分が両方とも入力されている場合、本来であれば遅れ時分の日本語/英語表示を約3セット、到着までの時分の日本語/英語表示を約1セットの順で表示されますが、ここでは交互に表示されるようにしています。</li>
+<li>遅れ時分については、3分未満は切り捨てて表示なし、3〜9分はそのまま表示、10〜119分は5分未満を切り捨てて5分刻みで表示、120分以上はその旨が表示されるようにしています。</li>
+<li>到着までの時分については、3分未満は切り捨てて表示なし、3〜9分はそのまま表示、10〜99分は5分未満を切り捨てて5分刻みで表示されるようにしています。なお、到着までの時分についてはあまり大きな数字での表示を見たことがないため、実際の表示仕様はよく分かっていません。</li>
+<li>大阪駅11番のりばの発車標は、実際には3段表示で横幅が22文字ではなく20文字タイプのものが設置されています。</li>
+<li>本シミュレーターはJavaScript・CSS等が正常に動作するブラウザでご覧いただけます。JavaScriptが動作しない環境では動きません。</li>
+<li>動作確認は MacBookのGoogle Chrome バージョン 39.0.2171.95 で行なっています。他の大体のOS・ブラウザでも正常に動作すると思われますが、一部ではレイアウトや挙動が異なったり、エラーなどで正常に動作しない環境もあるかもしれません。</li>
+</ul>
+
+
+
+<h2>素材提供について</h2>
+以下の素材については<a href="http://blogs.yahoo.co.jp/haruki1127sport" target="_blank">yyyy様</a>から<a href="http://blogs.yahoo.co.jp/haruki1127sport/4979755.html" target="_blank">素材を提供していただきました</a>。ありがとうございます。<br />
+
+<h5>いただいた素材</h5>
+2文字幅の特別快速、直通快速<br />
+3文字幅の急行、貨物、団体、直通快速<br />
+文殊、おわら<br />
+11番のりば
+12番のりば<br />
+ナイスホリデー近江路、嵐山もみじ号、篠山ABCマラソン、びわこライナー、ムーンライト九州
+ムーンライト高知松山山陽、ムーンライト八重垣、ムーンライト高知松山、
+ハリウッドエクスプレス、さわやかウォーキング、銀河、くろよん、但馬、あおもり
+ちくま、シュプール、東北夏祭り、かにカニはまかぜ、ビクトリーはくと、まほろば
+ふるさと雷鳥、富士、あさかぜ、はやぶさ・富士、サンライズゆめ、
+彗星・あかつき、サンライズ瀬戸、サンライズ出雲、なは・あかつき、はやぶさ・さくら、なは
+<br />
+宮津・天橋立経由
+おおさか東線経由
+<br />
+京都方面堅田
+京都方面安土
+名古屋方面浜松
+名古屋方面金山
+名古屋方面豊橋
+名古屋方面岡崎
+名古屋方面新城
+和歌山方面御坊
+和歌山方面湯浅
+ユニバーサルシティ方面桜島
+甲子園口
+大久保
+西宮
+土山
+芦屋
+灘
+宝殿
+御着
+神戸
+兵庫
+英賀保
+相生
+上郡
+福山
+熊山
+日生
+岡山方面備中高梁
+近江八幡
+敦賀
+関ヶ原
+長浜・敦賀
+敦賀・長浜
+岐阜
+永原・敦賀
+名古屋
+大津京
+貴生川
+綾部
+紀伊田辺
+串本
+紀伊勝浦
+佐用
+上月
+JR三山木
+京橋
+放出
+徳庵
+篠山口
+石生
+福井
+富山・和倉温泉
+金沢・魚津
+越中八尾
+黒姫
+新津
+函館
+品川
+高松・出雲市
+出雲市
+高松
+松山
+熊本・長崎
+南宮崎・長崎
+熊本
+熊本・大分
+高知・松山
+高知・松山・下関
+下関
+博多
+西鹿児島
+大分
+東舞鶴・宮津
+福知山・小浜
+永原
+京都方面永原
+本竜野
+東加古川
+新疋田
+
+
+<br />
+<br />
+「西宮」の英語、「福知山・小浜」の英語、「JR三山木」、「くろよん」の英語、「サンライズゆめ」の英語については、現物での表示は未確認で、推定で作成された画像です。<br />
+<hr />
+近江八幡の英語表記「Omi-machiman」については<a href="http://twitter.com/azusa287" target="_blank">あずさ様(@azusa287)</a>より<a href="http://twitter.com/azusa287/status/554296210110967808" target="_blank">写真をご提供いただきました</a>。ありがとうございます。
+
+
+
+<h2>表示素材集(パーツ集)</h2>
+<a href="specification.html">表示素材集(パーツ集)はこちらです。</a>
+<hr />
+
+
+<!--
+<h2>参考画像</h2>
+<img src="img/sample/1.jpg" alt="発車標(電光掲示板,発車案内)" /><br />
+<br />
+<img src="img/sample/2.jpg" alt="発車標(電光掲示板,発車案内)" /><br />
+<br />
+<img src="img/sample/3.jpg" alt="発車標(電光掲示板,発車案内)" /><br />
+<br />
+-->
+
+
+
+<hr />
+<!--Googleアクセス解析-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-71182415-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<!--タグはここから--><table border="0" cellspacing="0" cellpadding="0"><tr><td align="center"><a href="http://www.rays-counter.com/"><img src="http://www.rays-counter.com/d287_f8_010/54aab0fd5218f/" alt="アクセスカウンター" border="0"></a></td></tr><tr><td align="center"><img src="http://www.rays-counter.com/images/counter_01.gif" border="0" alt=""><img src="http://www.rays-counter.com/images/counter_02.gif" border="0" alt=""><img src="http://www.rays-counter.com/images/counter_03.gif" border="0" alt=""><img src="http://www.rays-counter.com/images/counter_04.gif" border="0" alt=""><img src="http://www.rays-counter.com/images/counter_05.gif" border="0" alt=""></td></tr></table><!--ここまで-->
+<!--カウンタータグここから--><table title="＠無料カウンター" summary="＠無料カウンター" border="0" cellpadding="0" cellspacing="0"><tr><td><table border="0" cellspacing="1" cellpadding="0"><tr><td align="left"><a href="http://www.at-counter.biz/"><img src="http://www.at-counter.biz/image/today.gif" alt="アクセスカウンター" width="30" height="12" border="0" /></a></td><td align="left"><script type="text/javascript"> document.write('<script src="http://at-counter.biz/acs.php?');document.write('r='+document.referrer+'&p='+document.location.href);document.write('&t=0059&m=1"><\/script>');</script></td><td align="left"><a href="http://www.at-counter.biz/"><img src="http://www.at-counter.biz/image/yesterday.gif" alt="無料カウンター" width="50" height="12" border="0" /></a></td><td align="left"><script type="text/javascript"> document.write('<script src="http://at-counter.biz/acs.php?');document.write('r='+document.referrer+'&p='+document.location.href);document.write('&t=0059&m=2"><\/script>');</script></td><td align="left"><a href="http://www.at-counter.biz/"><img src="http://www.at-counter.biz/image/total.gif" alt="無料アクセスカウンター" width="30" height="12" border="0" /></a><br />
+</td><td align="left"><script type="text/javascript"> document.write('<script src="http://at-counter.biz/acs.php?');document.write('r='+document.referrer+'&p='+document.location.href);document.write('&t=0059&m=3"><\/script>');</script></td><td><a href="http://www.at-counter.biz/"><img src="http://at-counter.biz/image/counter.gif" alt="ブログカウンター" width="64" height="12" border="0" /></a><br />
+</td></tr></table></td></tr></table><!--カウンタータグここまで-->
+
+</body>
+</html>

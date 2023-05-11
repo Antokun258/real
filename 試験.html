@@ -1,0 +1,598 @@
+<meta h1ttp-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta h1ttp-equiv="Content-Style-Type" content="text/css" />
+<meta h1ttp-equiv="Content-Script-Type" content="text/javascript" />
+<meta name="author" content="" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<title>試験</title>
+<div style="background-color:#0f5aa4; text-align: center;">  
+    <h1><font color="white" face="ＭＳ ゴシック">六甲駅発　平日時刻表</font></h1>
+    <button style="background-color:#0f5aa4; color: #fff; font-size:20px; font-family:ＭＳ ゴシック;" class="button">駅を変更</bu1tton>
+</div>
+<head>
+    <link rel="stylesheet" type="text/css" href="blinking.css">
+    <link rel="stylesheet" type="text/css" href="size5.css">
+    <link rel="stylesheet" type="text/css" href="time.css">
+    <link rel="stylesheet" type="text/css" href="daiyaku.css">
+    <link rel="stylesheet" type="text/css" href="daijikan.css">
+    <link rel="stylesheet" type="text/css" href="syoyaku.css">
+    <link rel="stylesheet" type="text/css" href="syojikan.css">
+    <link rel="stylesheet" type="text/css" href="font8.css">
+    <link rel="stylesheet" type="text/css" href="font9.css">
+    <link rel="stylesheet" type="text/css" href="button.css">
+    <link rel="stylesheet" type="text/css" href="kakoi.css">
+    <link rel="stylesheet" type="text/css" href="buttonsize1.css">
+    <link rel="stylesheet" type="text/css" href="densya.css">
+    <link rel="stylesheet" type="text/css" href="densya1.css">
+    <link rel="stylesheet" type="text/css" href="jikan.css">
+    <link rel="stylesheet" type="text/css" href="gousen1.css">
+    <link rel="stylesheet" type="text/css" href="gousen4.css">
+    <link rel="stylesheet" type="text/css" href="hyou1.css">
+    <link rel="stylesheet" type="text/css" href="hyou2.css">
+    <link rel="stylesheet" type="text/css" href="annai0.css">
+    <link rel="stylesheet" type="text/css" href="def1teisya.css">
+    <link rel="stylesheet" type="text/css" href="def1annai.css">
+    <link rel="stylesheet" type="text/css" href="def2teisya.css">
+    <link rel="stylesheet" type="text/css" href="de2fannai.css">
+    <link rel="stylesheet" type="text/css" href="teisya1.css">
+    <link rel="stylesheet" type="text/css" href="teisya2.css">
+    <link rel="stylesheet" type="text/css" href="annai1.css">
+    <link rel="stylesheet" type="text/css" href="annai2.css">
+    <link rel="stylesheet" type="text/css" href="font90.css">
+    <link rel="stylesheet" type="text/css" href="font100.css">
+    <link rel="stylesheet" type="text/css" href="font125.css">
+    <link rel="stylesheet" type="text/css" href="font150.css">
+    <link rel="stylesheet" type="text/css" href="button1.css">
+    <link rel="stylesheet" type="text/css" href="button2.css">
+    
+        
+</head>
+
+
+<html>
+    <body bgcolor="#451722" style="font-family:ＭＳ ゴシック;">
+        <span  class="font8 def1teisya"><span style="color:#000;background-color:#00ff00;">停車駅</span></span>
+        <span  class="font8 def1annai"><span style="color:#000;background-color:#00ff00;">ご案内</span></span>
+        <span  class="font8 def2teisya"><span style="color:#000;background-color:#00ff00;">停車駅</span></span>
+        <span  class="font8 def2annai"><span style="color:#000;background-color:#00ff00;">ご案内</span></span>
+        <table  class="jikan" style="color: #fff;">
+            <tr>
+                <td>
+                    <p id="Clock1" style="display: inline"></p>
+                    <script src="時間表示.js"></script>
+                </td>
+            </tr>
+        </table>
+        <img src="1号線.jpg" class="gousen1"> 
+
+    <div class="kakoi" style="text-align: center;"><font size="5"face="ＭＳ ゴシック">神戸三宮</font><font size="3"face="ＭＳ ゴシック">　新開地・山陽電鉄線　明石・姫路方面</font>
+        <table border="1" style="border-color: #c0c0c0;background-color: #3e3e3e;" class="hyou1">
+            <tr style="text-align:center;">
+                <td  width="150px">
+                    <div id="Elems13">
+                        <span id="1t1" class="time senpatsu1" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">1</span><span class="daiyaku">分後</span></span>
+                         <span id="1t2" class="time senpatsu1" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">2</span><span class="daiyaku">分後</span></span>
+                         <span id="1t3" class="time senpatsu1" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">3</span><span class="daiyaku">分後</span></span>
+                         <span id="1t4" class="time senpatsu1" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">4</span><span class="daiyaku">分後</span></span>
+                         <span id="1t5" class="time senpatsu1" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">5</span><span class="daiyaku">分後</span></span>
+                         <span id="1t6" class="time senpatsu1" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">6</span><span class="daiyaku">分後</span></span>
+                         <span id="1t7" class="time senpatsu1" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">7</span><span class="daiyaku">分後</span></span>
+                         <span id="1t8" class="time senpatsu1" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">8</span><span class="daiyaku">分後</span></span>
+                         <span id="1t9" class="time senpatsu1" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">9</span><span class="daiyaku">分後</span></span>
+                         <span id="1t10" class="time senpatsu1" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">10</span><span class="daiyaku">分後</span></span>
+                         <span id="1t11" class="time senpatsu1" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">11</span><span class="daiyaku">分後</span></span>
+                         <span id="1t12" class="time senpatsu1" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">12</span><span class="daiyaku">分後</span></span>
+                         <span id="1t13" class="time senpatsu1" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">13</span><span class="daiyaku">分後</span></span>
+                         <span id="1t14" class="time senpatsu1" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">14</span><span class="daiyaku">分後</span></span>
+                         <span id="1t15" class="time senpatsu1" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">15</span><span class="daiyaku">分後</span></span>
+                         <span id="1t16" class="time senpatsu1" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">16</span><span class="daiyaku">分後</span></span>
+                         <span id="1t17" class="time senpatsu1" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">17</span><span class="daiyaku">分後</span></span>
+                         <span id="1t18" class="time senpatsu1" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">18</span><span class="daiyaku">分後</span></span>
+                         <span id="1t19" class="time senpatsu1" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">19</span><span class="daiyaku">分後</span></span>
+                         <span id="1t20" class="time senpatsu1" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">20</span><span class="daiyaku">分後</span></span>
+                         <span id="1t21" class="time senpatsu1" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">21</span><span class="daiyaku">分後</span></span>
+                         <span id="1t22" class="time senpatsu1" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">22</span><span class="daiyaku">分後</span></span>
+                         <span id="1t23" class="time senpatsu1" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">23</span><span class="daiyaku">分後</span></span>
+                         <span id="1t24" class="time senpatsu1" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">24</span><span class="daiyaku">分後</span></span>
+                         <span id="1t25" class="time senpatsu1" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">25</span><span class="daiyaku">分後</span></span>
+                         <span id="1t26" class="time senpatsu1" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">26</span><span class="daiyaku">分後</span></span>
+                         <span id="1t27" class="time senpatsu1" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">27</span><span class="daiyaku">分後</span></span>
+                         <span id="1t28" class="time senpatsu1" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">28</span><span class="daiyaku">分後</span></span>
+                         <span id="1t29" class="time senpatsu1" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">29</span><span class="daiyaku">分後</span></span>
+                         <span id="1t30" class="time senpatsu1" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">30</span><span class="daiyaku">分後</span></span>
+                         <span id="1t31" class="time senpatsu1" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">31</span><span class="daiyaku">分後</span></span>
+                         <span id="1t32" class="time senpatsu1" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">32</span><span class="daiyaku">分後</span></span>
+                         <span id="1t33" class="time senpatsu1" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">33</span><span class="daiyaku">分後</span></span>
+                         <span id="1t34" class="time senpatsu1" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">34</span><span class="daiyaku">分後</span></span>
+                         <span id="1t35" class="time senpatsu1" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">35</span><span class="daiyaku">分後</span></span>
+                         <span id="1t36" class="time senpatsu1" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">36</span><span class="daiyaku">分後</span></span>
+                         <span id="1t37" class="time senpatsu1" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">37</span><span class="daiyaku">分後</span></span>
+                         <span id="1t38" class="time senpatsu1" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">38</span><span class="daiyaku">分後</span></span>
+                         <span id="1t39" class="time senpatsu1" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">39</span><span class="daiyaku">分後</span></span>
+                         <span id="1t40" class="time senpatsu1" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">40</span><span class="daiyaku">分後</span></span>
+                         <span id="1t41" class="time senpatsu1" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">41</span><span class="daiyaku">分後</span></span>
+                         <span id="1t42" class="time senpatsu1" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">42</span><span class="daiyaku">分後</span></span>
+                         <span id="1t43" class="time senpatsu1" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">43</span><span class="daiyaku">分後</span></span>
+                         <span id="1t44" class="time senpatsu1" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">44</span><span class="daiyaku">分後</span></span>
+                         <span id="1t45" class="time senpatsu1" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">45</span><span class="daiyaku">分後</span></span>
+                         <span id="1t46" class="time senpatsu1" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">46</span><span class="daiyaku">分後</span></span>
+                         <span id="1t47" class="time senpatsu1" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">47</span><span class="daiyaku">分後</span></span>
+                         <span id="1t48" class="time senpatsu1" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">48</span><span class="daiyaku">分後</span></span>
+                         <span id="1t49" class="time senpatsu1" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">49</span><span class="daiyaku">分後</span></span>
+                         <span id="1t50" class="time senpatsu1" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">50</span><span class="daiyaku">分後</span></span>
+                         <span id="1t51" class="time senpatsu1" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">51</span><span class="daiyaku">分後</span></span>
+                         <span id="1t52" class="time senpatsu1" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">52</span><span class="daiyaku">分後</span></span>
+                         <span id="1t53" class="time senpatsu1" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">53</span><span class="daiyaku">分後</span></span>
+                         <span id="1t54" class="time senpatsu1" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">54</span><span class="daiyaku">分後</span></span>
+                         <span id="1t55" class="time senpatsu1" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">55</span><span class="daiyaku">分後</span></span>
+                         <span id="1t56" class="time senpatsu1" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">56</span><span class="daiyaku">分後</span></span>
+                         <span id="1t57" class="time senpatsu1" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">57</span><span class="daiyaku">分後</span></span>
+                         <span id="1t58" class="time senpatsu1" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">58</span><span class="daiyaku">分後</span></span>
+                         <span id="1t59" class="time senpatsu1" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">59</span><span class="daiyaku">分後</span></span>
+                         <span id="1t60" class="time senpatsu1" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">60</span><span class="daiyaku">分後</span></span>
+             </div>
+                </td>
+                <td colspan="4" align="center">           
+                    <button class="buttonsize1" onclick="onclick=location.href='file:///D:/html/jr%E5%AE%9D%E5%A1%9A%E7%B7%9A1639.html'"></button>
+                </td>
+            </tr>
+            <tr style="height: 50px;">
+                <td colspan="3">
+                </td>
+            </tr>
+            <tr style="text-align: center;" height="50" class="size5">
+                <td>
+                    <div id="Elems13">
+                        <span id="1tt1" class="time jihatsu1" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">1</span><span class="syouyaku">分後</span></span>
+<span id="1tt2" class="time jihatsu1" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">2</span><span class="syouyaku">分後</span></span>
+<span id="1tt3" class="time jihatsu1" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">3</span><span class="syouyaku">分後</span></span>
+<span id="1tt4" class="time jihatsu1" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">4</span><span class="syouyaku">分後</span></span>
+<span id="1tt5" class="time jihatsu1" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">5</span><span class="syouyaku">分後</span></span>
+<span id="1tt6" class="time jihatsu1" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">6</span><span class="syouyaku">分後</span></span>
+<span id="1tt7" class="time jihatsu1" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">7</span><span class="syouyaku">分後</span></span>
+<span id="1tt8" class="time jihatsu1" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">8</span><span class="syouyaku">分後</span></span>
+<span id="1tt9" class="time jihatsu1" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">9</span><span class="syouyaku">分後</span></span>
+<span id="1tt10" class="time jihatsu1" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">10</span><span class="syouyaku">分後</span></span>
+<span id="1tt11" class="time jihatsu1" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">11</span><span class="syouyaku">分後</span></span>
+<span id="1tt12" class="time jihatsu1" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">12</span><span class="syouyaku">分後</span></span>
+<span id="1tt13" class="time jihatsu1" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">13</span><span class="syouyaku">分後</span></span>
+<span id="1tt14" class="time jihatsu1" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">14</span><span class="syouyaku">分後</span></span>
+<span id="1tt15" class="time jihatsu1" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">15</span><span class="syouyaku">分後</span></span>
+<span id="1tt16" class="time jihatsu1" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">16</span><span class="syouyaku">分後</span></span>
+<span id="1tt17" class="time jihatsu1" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">17</span><span class="syouyaku">分後</span></span>
+<span id="1tt18" class="time jihatsu1" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">18</span><span class="syouyaku">分後</span></span>
+<span id="1tt19" class="time jihatsu1" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">19</span><span class="syouyaku">分後</span></span>
+<span id="1tt20" class="time jihatsu1" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">20</span><span class="syouyaku">分後</span></span>
+<span id="1tt21" class="time jihatsu1" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">21</span><span class="syouyaku">分後</span></span>
+<span id="1tt22" class="time jihatsu1" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">22</span><span class="syouyaku">分後</span></span>
+<span id="1tt23" class="time jihatsu1" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">23</span><span class="syouyaku">分後</span></span>
+<span id="1tt24" class="time jihatsu1" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">24</span><span class="syouyaku">分後</span></span>
+<span id="1tt25" class="time jihatsu1" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">25</span><span class="syouyaku">分後</span></span>
+<span id="1tt26" class="time jihatsu1" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">26</span><span class="syouyaku">分後</span></span>
+<span id="1tt27" class="time jihatsu1" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">27</span><span class="syouyaku">分後</span></span>
+<span id="1tt28" class="time jihatsu1" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">28</span><span class="syouyaku">分後</span></span>
+<span id="1tt29" class="time jihatsu1" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">29</span><span class="syouyaku">分後</span></span>
+<span id="1tt30" class="time jihatsu1" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">30</span><span class="syouyaku">分後</span></span>
+<span id="1tt31" class="time jihatsu1" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">31</span><span class="syouyaku">分後</span></span>
+<span id="1tt32" class="time jihatsu1" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">32</span><span class="syouyaku">分後</span></span>
+<span id="1tt33" class="time jihatsu1" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">33</span><span class="syouyaku">分後</span></span>
+<span id="1tt34" class="time jihatsu1" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">34</span><span class="syouyaku">分後</span></span>
+<span id="1tt35" class="time jihatsu1" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">35</span><span class="syouyaku">分後</span></span>
+<span id="1tt36" class="time jihatsu1" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">36</span><span class="syouyaku">分後</span></span>
+<span id="1tt37" class="time jihatsu1" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">37</span><span class="syouyaku">分後</span></span>
+<span id="1tt38" class="time jihatsu1" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">38</span><span class="syouyaku">分後</span></span>
+<span id="1tt39" class="time jihatsu1" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">39</span><span class="syouyaku">分後</span></span>
+<span id="1tt40" class="time jihatsu1" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">40</span><span class="syouyaku">分後</span></span>
+<span id="1tt41" class="time jihatsu1" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">41</span><span class="syouyaku">分後</span></span>
+<span id="1tt42" class="time jihatsu1" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">42</span><span class="syouyaku">分後</span></span>
+<span id="1tt43" class="time jihatsu1" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">43</span><span class="syouyaku">分後</span></span>
+<span id="1tt44" class="time jihatsu1" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">44</span><span class="syouyaku">分後</span></span>
+<span id="1tt45" class="time jihatsu1" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">45</span><span class="syouyaku">分後</span></span>
+<span id="1tt46" class="time jihatsu1" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">46</span><span class="syouyaku">分後</span></span>
+<span id="1tt47" class="time jihatsu1" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">47</span><span class="syouyaku">分後</span></span>
+<span id="1tt48" class="time jihatsu1" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">48</span><span class="syouyaku">分後</span></span>
+<span id="1tt49" class="time jihatsu1" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">49</span><span class="syouyaku">分後</span></span>
+<span id="1tt50" class="time jihatsu1" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">50</span><span class="syouyaku">分後</span></span>
+<span id="1tt51" class="time jihatsu1" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">51</span><span class="syouyaku">分後</span></span>
+<span id="1tt52" class="time jihatsu1" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">52</span><span class="syouyaku">分後</span></span>
+<span id="1tt53" class="time jihatsu1" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">53</span><span class="syouyaku">分後</span></span>
+<span id="1tt54" class="time jihatsu1" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">54</span><span class="syouyaku">分後</span></span>
+<span id="1tt55" class="time jihatsu1" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">55</span><span class="syouyaku">分後</span></span>
+<span id="1tt56" class="time jihatsu1" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">56</span><span class="syouyaku">分後</span></span>
+<span id="1tt57" class="time jihatsu1" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">57</span><span class="syouyaku">分後</span></span>
+<span id="1tt58" class="time jihatsu1" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">58</span><span class="syouyaku">分後</span></span>
+<span id="1tt59" class="time jihatsu1" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">59</span><span class="syouyaku">分後</span></span>
+<span id="1tt60" class="time jihatsu1" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">60</span><span class="syouyaku">分後</span></span>
+             
+                    </div>
+                </td>
+                <td style="width: 450px; color: #fff;">
+                    <div id="Elems13">
+
+                        <span class="font150" id="普通大阪梅田"><span id="1110" style="background-color: #000;">　普通　</span><span id="1120">　大阪梅田</span></span>
+                        <span class="font150" id="急行大阪梅田"><span id="1210" style="background-color: #ff0;color: #000;">　急行　</span><span id="1220">　大阪梅田</span></span>
+                        <span class="font150" id="通勤急行大阪梅田"><span id="1310" style="background-color: #ff0;color: #000;">通勤急行</span><span id="1320">　大阪梅田</span></span>
+                        <span class="font150" id="準特急大阪梅田"><span id="1410" style="background-color: #f00;">準特急</span><span id="1420">　大阪梅田</span></span>
+                        <span class="font150" id="通勤特急大阪梅田"><span id="1510" style="background-color: #f00;">通勤特急</span><span id="1520">　大阪梅田</span></span>
+                        <span class="font150" id="特急大阪梅田"><span id="1610" style="background-color: #f00;">　特急　</span><span id="1620">　大阪梅田</span></span>
+                        <span class="font150" id="準急大阪梅田"><span id="1710" style="background-color: #00793d;">　準急　</span><span id="1720">　大阪梅田</span></span>
+
+                        <span class="font90"  id="普通西宮北口"><span id="1115" style="background-color: #000;">　普通　</span><span id="1125">　西宮北口</span></span>
+
+                        <span class="font150" id="普通夙川"><span id="1119" style="background-color: #000;">　普通　</span><span id="1129">　夙川</span></span>
+
+                        <span class="font150" id="普通神戸三宮"><span id="1116" style="background-color: #000;">　普通　</span><span id="1126">　神戸三宮</span></span>
+                        <span class="font125" id="急行神戸三宮"><span id="1216" style="background-color: #ff0;color: #000;">　急行　</span><span id="1226">　神戸三宮</span></span>
+                        <span class="font150" id="通勤急行神戸三宮"><span id="1316" style="background-color: #ff0;color: #000;">通勤急行</span><span id="1326">　神戸三宮</span></span>
+                        <span class="font125" id="通勤特急神戸三宮"><span id="1516" style="background-color: #f00;">通勤特急</span><span id="1526">　神戸三宮</span></span>
+
+                        <span class="font150" id="普通高速神戸"><span id="1117" style="background-color: #000;">　普通　</span><span id="1127">　高速神戸</span></span>
+                        <span class="font125" id="準特急高速神戸"><span id="1417" style="background-color: #f00;">準特急</span><span id="1427">　高速神戸</span></span>
+                        <span class="font100" id="通勤特急高速神戸"><span id="1517" style="background-color: #f00;">通勤特急</span><span id="1527">　高速神戸</span></span>
+                        <span class="font125" id="特急高速神戸"><span id="1617" style="background-color: #f00;">　特急　</span><span id="1627">　高速神戸</span></span>
+
+                        <span class="font150" id="普通新開地"><span id="1118" style="background-color: #000;">　普通　</span><span id="1128">　新開地</span></span>
+                        <span class="font150" id="急行新開地"><span id="1218" style="background-color: #ff0;color: #000;">　急行　</span><span id="1228">　新開地</span></span>
+                        <span class="font125" id="準特急新開地"><span id="1418" style="background-color: #f00;">準特急</span><span id="1428">　新開地</span></span>
+                        <span class="font125" id="通勤特急新開地"><span id="1518" style="background-color: #f00;">通勤特急</span><span id="1528">　新開地</span></span>
+                        <span class="font125" id="特急新開地"><span id="1618" style="background-color: #f00;">　特急　</span><span id="1628">　新開地</span></span>
+
+
+                    </div>
+                </td>
+                <td style="width: 350px;"><marquee><span style="color:#fff"><font face="ＭＳ ゴシック">車内での、携帯電話による通話はご遠慮ください。なお、優先座席付近では、混雑時には携帯電話の電源をお切りください。　　　　　　　　　　　　　　皆様にお願いします。車内への危険物の持ち込みは法令で禁止されています。車内ならびに駅構内などで危険物もしくは持ち主不明の不審物を発見されましたら、ただちに係員にご連絡下さいますようお願いします。　　　　　　　　　　　　　　阪急・阪神のグループカード　ＳＴＡＣＩＡ　ＰｉＴａＰａでは、<span style='color:red;'>交通利用</span>で<span style='color:red;'>ポイントを進呈するサービス</span>を実施しております。　便利でお得な<span style='color:red;'>ＳＴＡＣＩＡ　ＰｉＴａＰａ</span>にぜひご入会下さい。　　　　　　　　　　　　　　お年寄りや、お体の不自由な方、妊婦の方、小さなお子様をお連れの方には<span style='color:red;'>座席をお譲り下さい</span>。皆様のご協力をお願いします。　　　　　　　　　　　　　　お客様にお願いいたします。<span style='color:orange;'>発車間際の駆け込み乗車は</span><span style='color:red;'>大変危険</span><span style='color:orange;'>です。また、</span><span style='color:red;'>列車が遅れる原因</span><span style='color:orange;'>にもなるだけでなく、</span><span style='color:red;'>まわりのお客様のご迷惑</span><span style='color:orange;'>にもなります。無理なご乗車は絶対におやめください。</span>ゆとりあるご乗車をおねがいいたします。</font></span></marquee></td>
+            </tr>
+        </table>
+
+            <div id="Elems131">
+                                <img id="elemp000" src="電車が発車します黄.jpg" class="densya"> 
+                                <img id="elemp110" src="普通大阪梅田.jpg" class="button2">
+                                <img id="elemp120" src="普通大阪梅田.jpg" class="button2">
+                                <img id="elemp210" src="急行大阪梅田.jpg" class="button2">
+                                <img id="elemp220" src="急行大阪梅田.jpg" class="button2">
+                                <img id="elemp310" src="通勤急行大阪梅田.jpg" class="button2">
+                                <img id="elemp320" src="通勤急行大阪梅田.jpg" class="button2">
+                                <img id="elemp410" src="準特急大阪梅田.jpg" class="button2">
+                                <img id="elemp420" src="準特急大阪梅田.jpg" class="button2">
+                                <img id="elemp510" src="通勤特急大阪梅田.jpg" class="button2">
+                                <img id="elemp520" src="通勤特急大阪梅田.jpg" class="button2">
+                                <img id="elemp610" src="特急大阪梅田.jpg" class="button2">
+                                <img id="elemp620" src="特急大阪梅田.jpg" class="button2">
+                                <img id="elemp710" src="準急大阪梅田.jpg" class="button2">
+                                <img id="elemp720" src="準急大阪梅田.jpg" class="button2">
+                            
+                                <img id="elemp115" src="普通西宮北口.jpg" class="button2">
+                                <img id="elemp125" src="普通西宮北口.jpg" class="button2">
+
+                                <img id="elemp116"  class="button1" src="普通神戸三宮.jpg">
+                                <img id="elemp126"  class="button1" src="普通神戸三宮.jpg">
+                                <img id="elemp216"  class="button1" src="急行神戸三宮.jpg">
+                                <img id="elemp226"  class="button1" src="急行神戸三宮.jpg">
+                                <img id="elemp316"  class="button1" src="通勤急行神戸三宮.jpg">
+                                <img id="elemp326"  class="button1" src="通勤急行神戸三宮.jpg">
+                                <img id="elemp516"  class="button1" src="通勤特急神戸三宮.jpg">
+                                <img id="elemp526"  class="button1" src="通勤特急神戸三宮.jpg">
+    
+                                <img id="elemp117"  class="button1" src="普通高速神戸.jpg">
+                                <img id="elemp127"  class="button1" src="普通高速神戸.jpg">
+                                <img id="elemp417"  class="button1" src="準特急高速神戸.jpg">
+                                <img id="elemp427"  class="button1" src="準特急高速神戸.jpg">
+                                <img id="elemp517"  class="button1" src="通勤特急高速神戸.jpg">
+                                <img id="elemp527"  class="button1" src="通勤特急高速神戸.jpg">
+                                <img id="elemp617"  class="button1" src="特急高速神戸.jpg">
+                                <img id="elemp627"  class="button1" src="特急高速神戸.jpg">
+     
+                                <img id="elemp118"  class="button1" src="普通新開地.jpg">
+                                <img id="elemp128"  class="button1" src="普通新開地.jpg">
+                                <img id="elemp218"  class="button1" src="急行新開地.jpg">
+                                <img id="elemp228"  class="button1" src="急行新開地.jpg">
+                                <img id="elemp418"  class="button1" src="準特急新開地.jpg">
+                                <img id="elemp428"  class="button1" src="準特急新開地.jpg">
+                                <img id="elemp518"  class="button1" src="通勤特急新開地.jpg">
+                                <img id="elemp528"  class="button1" src="通勤特急新開地.jpg">
+                                <img id="elemp618"  class="button1" src="特急新開地.jpg">
+                                <img id="elemp628"  class="button1" src="特急新開地.jpg">
+
+                                <span id="te1" class="font8 teisya1">神戸三宮・花隈・高速神戸</span>
+                                <span id="te2" class="font8 teisya1">神戸三宮・花隈</span>
+                                <span id="te3" class="font8 teisya1">神戸三宮までの各駅</span>
+
+                                <span id="te10" class="font8 teisya2">岡本・夙川・西宮北口・塚口・十三</span>
+                                <span id="te11" class="font8 teisya2">御影・岡本・芦屋川・夙川・西宮北口・塚口・十三</span>
+                                <span id="te12" class="font8 teisya2">御影・岡本・芦屋川・夙川・西宮北口・武庫之荘・塚口・十三</span>
+
+                                <span id="an1"  class="font8 annai2">神戸三宮以遠最終接続列車2341 2343</span>
+
+                                <span id="an10" class="font8 annai2">塚口・十三・大阪梅田へは岡本で<span style="background-color: #f00;">通勤特急</span>大阪梅田行きに乗り換え・西宮北口で始発の<span style="background-color: #000;">　普通　</span>大阪梅田行きに連絡</span></span>
+                                <span id="an11" class="font8 annai2">塚口・十三・大阪梅田へは岡本で<span style="background-color: #f00;">通勤特急</span>大阪梅田行きに乗り換え・武庫之荘で始発の<span style="background-color: #000;">　普通　</span>大阪梅田行きに連絡</span></span>
+                                <span id="an12" class="font8 annai2">塚口・十三・大阪梅田へは後の<span style="background-color: #f00;">準特急</span>大阪梅田行きが先着</span>
+                                <span id="an13" class="font8 annai2">西宮北口以遠最終接続列車2335</span>
+                                <span id="an14" class="font8 annai2">大阪梅田までこの電車が先着555</span>
+                                <span id="an15" class="font8 annai2">十三・大阪梅田へは岡本で<span style="background-color: #f00;">特急</span>大阪梅田行きに乗り換え</span>
+
+        
+                                              
+            </div>
+        </div>
+    </body>
+</html>
+<html>
+    <body>
+        <img src="4号線.jpg" class="gousen4">
+        <div class="kakoi" style="text-align: center;"><font size="5"face="ＭＳ ゴシック">大阪梅田</font><font size="3"face="ＭＳ ゴシック">　十三・西宮北口・甲陽園・宝塚・今津・伊丹・京都方面</font>
+            <table border="1" align="right" style="border-color: #c0c0c0;background-color: #3e3e3e;" class="hyou2">
+                <tr style="text-align:center;">
+                    <td width="150px">
+                        <div id="Elems13">
+                            <span id="2t1" class="time senpatsu2" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">1</span><span class="daiyaku">分後</span></span>
+                            <span id="2t2" class="time senpatsu2" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">2</span><span class="daiyaku">分後</span></span>
+<span id="2t3" class="time senpatsu2" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">3</span><span class="daiyaku">分後</span></span>
+<span id="2t4" class="time senpatsu2" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">4</span><span class="daiyaku">分後</span></span>
+<span id="2t5" class="time senpatsu2" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">5</span><span class="daiyaku">分後</span></span>
+<span id="2t6" class="time senpatsu2" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">6</span><span class="daiyaku">分後</span></span>
+<span id="2t7" class="time senpatsu2" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">7</span><span class="daiyaku">分後</span></span>
+<span id="2t8" class="time senpatsu2" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">8</span><span class="daiyaku">分後</span></span>
+<span id="2t9" class="time senpatsu2" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">9</span><span class="daiyaku">分後</span></span>
+<span id="2t10" class="time senpatsu2" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">10</span><span class="daiyaku">分後</span></span>
+<span id="2t11" class="time senpatsu2" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">11</span><span class="daiyaku">分後</span></span>
+<span id="2t12" class="time senpatsu2" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">12</span><span class="daiyaku">分後</span></span>
+<span id="2t13" class="time senpatsu2" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">13</span><span class="daiyaku">分後</span></span>
+<span id="2t14" class="time senpatsu2" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">14</span><span class="daiyaku">分後</span></span>
+<span id="2t15" class="time senpatsu2" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">15</span><span class="daiyaku">分後</span></span>
+<span id="2t16" class="time senpatsu2" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">16</span><span class="daiyaku">分後</span></span>
+<span id="2t17" class="time senpatsu2" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">17</span><span class="daiyaku">分後</span></span>
+<span id="2t18" class="time senpatsu2" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">18</span><span class="daiyaku">分後</span></span>
+<span id="2t19" class="time senpatsu2" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">19</span><span class="daiyaku">分後</span></span>
+<span id="2t20" class="time senpatsu2" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">20</span><span class="daiyaku">分後</span></span>
+<span id="2t21" class="time senpatsu2" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">21</span><span class="daiyaku">分後</span></span>
+<span id="2t22" class="time senpatsu2" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">22</span><span class="daiyaku">分後</span></span>
+<span id="2t23" class="time senpatsu2" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">23</span><span class="daiyaku">分後</span></span>
+<span id="2t24" class="time senpatsu2" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">24</span><span class="daiyaku">分後</span></span>
+<span id="2t25" class="time senpatsu2" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">25</span><span class="daiyaku">分後</span></span>
+<span id="2t26" class="time senpatsu2" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">26</span><span class="daiyaku">分後</span></span>
+<span id="2t27" class="time senpatsu2" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">27</span><span class="daiyaku">分後</span></span>
+<span id="2t28" class="time senpatsu2" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">28</span><span class="daiyaku">分後</span></span>
+<span id="2t29" class="time senpatsu2" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">29</span><span class="daiyaku">分後</span></span>
+<span id="2t30" class="time senpatsu2" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">30</span><span class="daiyaku">分後</span></span>
+<span id="2t31" class="time senpatsu2" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">31</span><span class="daiyaku">分後</span></span>
+<span id="2t32" class="time senpatsu2" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">32</span><span class="daiyaku">分後</span></span>
+<span id="2t33" class="time senpatsu2" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">33</span><span class="daiyaku">分後</span></span>
+<span id="2t34" class="time senpatsu2" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">34</span><span class="daiyaku">分後</span></span>
+<span id="2t35" class="time senpatsu2" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">35</span><span class="daiyaku">分後</span></span>
+<span id="2t36" class="time senpatsu2" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">36</span><span class="daiyaku">分後</span></span>
+<span id="2t37" class="time senpatsu2" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">37</span><span class="daiyaku">分後</span></span>
+<span id="2t38" class="time senpatsu2" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">38</span><span class="daiyaku">分後</span></span>
+<span id="2t39" class="time senpatsu2" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">39</span><span class="daiyaku">分後</span></span>
+<span id="2t40" class="time senpatsu2" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">40</span><span class="daiyaku">分後</span></span>
+<span id="2t41" class="time senpatsu2" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">41</span><span class="daiyaku">分後</span></span>
+<span id="2t42" class="time senpatsu2" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">42</span><span class="daiyaku">分後</span></span>
+<span id="2t43" class="time senpatsu2" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">43</span><span class="daiyaku">分後</span></span>
+<span id="2t44" class="time senpatsu2" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">44</span><span class="daiyaku">分後</span></span>
+<span id="2t45" class="time senpatsu2" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">45</span><span class="daiyaku">分後</span></span>
+<span id="2t46" class="time senpatsu2" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">46</span><span class="daiyaku">分後</span></span>
+<span id="2t47" class="time senpatsu2" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">47</span><span class="daiyaku">分後</span></span>
+<span id="2t48" class="time senpatsu2" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">48</span><span class="daiyaku">分後</span></span>
+<span id="2t49" class="time senpatsu2" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">49</span><span class="daiyaku">分後</span></span>
+<span id="2t50" class="time senpatsu2" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">50</span><span class="daiyaku">分後</span></span>
+<span id="2t51" class="time senpatsu2" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">51</span><span class="daiyaku">分後</span></span>
+<span id="2t52" class="time senpatsu2" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">52</span><span class="daiyaku">分後</span></span>
+<span id="2t53" class="time senpatsu2" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">53</span><span class="daiyaku">分後</span></span>
+<span id="2t54" class="time senpatsu2" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">54</span><span class="daiyaku">分後</span></span>
+<span id="2t55" class="time senpatsu2" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">55</span><span class="daiyaku">分後</span></span>
+<span id="2t56" class="time senpatsu2" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">56</span><span class="daiyaku">分後</span></span>
+<span id="2t57" class="time senpatsu2" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">57</span><span class="daiyaku">分後</span></span>
+<span id="2t58" class="time senpatsu2" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">58</span><span class="daiyaku">分後</span></span>
+<span id="2t59" class="time senpatsu2" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">59</span><span class="daiyaku">分後</span></span>
+<span id="2t60" class="time senpatsu2" style="color: #fff"><span class="daiyaku">約</span><span class="daijikan">60</span><span class="daiyaku">分後</span></span>
+       
+                        </div>
+                    </td>
+                    <td colspan="4">
+                    <button class="buttonsize1" onclick="onclick=location.href='file:///D:/html/jr%E5%AE%9D%E5%A1%9A%E7%B7%9A1639.html'" ></button></td>
+                </tr>
+                <tr style="height: 50px;">
+                    <td colspan="3"></td>
+                </tr>
+                <tr style="text-align: center;" height="50" class="size5">
+                    <td>
+                        <div id="Elems13">
+                            <span id="2tt1" class="time jihatsu2" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">1</span><span class="syouyaku">分後</span></span>
+<span id="2tt2" class="time jihatsu2" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">2</span><span class="syouyaku">分後</span></span>
+<span id="2tt3" class="time jihatsu2" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">3</span><span class="syouyaku">分後</span></span>
+<span id="2tt4" class="time jihatsu2" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">4</span><span class="syouyaku">分後</span></span>
+<span id="2tt5" class="time jihatsu2" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">5</span><span class="syouyaku">分後</span></span>
+<span id="2tt6" class="time jihatsu2" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">6</span><span class="syouyaku">分後</span></span>
+<span id="2tt7" class="time jihatsu2" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">7</span><span class="syouyaku">分後</span></span>
+<span id="2tt8" class="time jihatsu2" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">8</span><span class="syouyaku">分後</span></span>
+<span id="2tt9" class="time jihatsu2" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">9</span><span class="syouyaku">分後</span></span>
+<span id="2tt10" class="time jihatsu2" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">10</span><span class="syouyaku">分後</span></span>
+<span id="2tt11" class="time jihatsu2" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">11</span><span class="syouyaku">分後</span></span>
+<span id="2tt12" class="time jihatsu2" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">12</span><span class="syouyaku">分後</span></span>
+<span id="2tt13" class="time jihatsu2" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">13</span><span class="syouyaku">分後</span></span>
+<span id="2tt14" class="time jihatsu2" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">14</span><span class="syouyaku">分後</span></span>
+<span id="2tt15" class="time jihatsu2" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">15</span><span class="syouyaku">分後</span></span>
+<span id="2tt16" class="time jihatsu2" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">16</span><span class="syouyaku">分後</span></span>
+<span id="2tt17" class="time jihatsu2" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">17</span><span class="syouyaku">分後</span></span>
+<span id="2tt18" class="time jihatsu2" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">18</span><span class="syouyaku">分後</span></span>
+<span id="2tt19" class="time jihatsu2" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">19</span><span class="syouyaku">分後</span></span>
+<span id="2tt20" class="time jihatsu2" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">20</span><span class="syouyaku">分後</span></span>
+<span id="2tt21" class="time jihatsu2" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">21</span><span class="syouyaku">分後</span></span>
+<span id="2tt22" class="time jihatsu2" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">22</span><span class="syouyaku">分後</span></span>
+<span id="2tt23" class="time jihatsu2" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">23</span><span class="syouyaku">分後</span></span>
+<span id="2tt24" class="time jihatsu2" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">24</span><span class="syouyaku">分後</span></span>
+<span id="2tt25" class="time jihatsu2" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">25</span><span class="syouyaku">分後</span></span>
+<span id="2tt26" class="time jihatsu2" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">26</span><span class="syouyaku">分後</span></span>
+<span id="2tt27" class="time jihatsu2" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">27</span><span class="syouyaku">分後</span></span>
+<span id="2tt28" class="time jihatsu2" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">28</span><span class="syouyaku">分後</span></span>
+<span id="2tt29" class="time jihatsu2" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">29</span><span class="syouyaku">分後</span></span>
+<span id="2tt30" class="time jihatsu2" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">30</span><span class="syouyaku">分後</span></span>
+<span id="2tt31" class="time jihatsu2" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">31</span><span class="syouyaku">分後</span></span>
+<span id="2tt32" class="time jihatsu2" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">32</span><span class="syouyaku">分後</span></span>
+<span id="2tt33" class="time jihatsu2" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">33</span><span class="syouyaku">分後</span></span>
+<span id="2tt34" class="time jihatsu2" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">34</span><span class="syouyaku">分後</span></span>
+<span id="2tt35" class="time jihatsu2" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">35</span><span class="syouyaku">分後</span></span>
+<span id="2tt36" class="time jihatsu2" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">36</span><span class="syouyaku">分後</span></span>
+<span id="2tt37" class="time jihatsu2" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">37</span><span class="syouyaku">分後</span></span>
+<span id="2tt38" class="time jihatsu2" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">38</span><span class="syouyaku">分後</span></span>
+<span id="2tt39" class="time jihatsu2" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">39</span><span class="syouyaku">分後</span></span>
+<span id="2tt40" class="time jihatsu2" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">40</span><span class="syouyaku">分後</span></span>
+<span id="2tt41" class="time jihatsu2" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">41</span><span class="syouyaku">分後</span></span>
+<span id="2tt42" class="time jihatsu2" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">42</span><span class="syouyaku">分後</span></span>
+<span id="2tt43" class="time jihatsu2" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">43</span><span class="syouyaku">分後</span></span>
+<span id="2tt44" class="time jihatsu2" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">44</span><span class="syouyaku">分後</span></span>
+<span id="2tt45" class="time jihatsu2" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">45</span><span class="syouyaku">分後</span></span>
+<span id="2tt46" class="time jihatsu2" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">46</span><span class="syouyaku">分後</span></span>
+<span id="2tt47" class="time jihatsu2" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">47</span><span class="syouyaku">分後</span></span>
+<span id="2tt48" class="time jihatsu2" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">48</span><span class="syouyaku">分後</span></span>
+<span id="2tt49" class="time jihatsu2" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">49</span><span class="syouyaku">分後</span></span>
+<span id="2tt50" class="time jihatsu2" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">50</span><span class="syouyaku">分後</span></span>
+<span id="2tt51" class="time jihatsu2" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">51</span><span class="syouyaku">分後</span></span>
+<span id="2tt52" class="time jihatsu2" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">52</span><span class="syouyaku">分後</span></span>
+<span id="2tt53" class="time jihatsu2" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">53</span><span class="syouyaku">分後</span></span>
+<span id="2tt54" class="time jihatsu2" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">54</span><span class="syouyaku">分後</span></span>
+<span id="2tt55" class="time jihatsu2" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">55</span><span class="syouyaku">分後</span></span>
+<span id="2tt56" class="time jihatsu2" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">56</span><span class="syouyaku">分後</span></span>
+<span id="2tt57" class="time jihatsu2" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">57</span><span class="syouyaku">分後</span></span>
+<span id="2tt58" class="time jihatsu2" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">58</span><span class="syouyaku">分後</span></span>
+<span id="2tt59" class="time jihatsu2" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">59</span><span class="syouyaku">分後</span></span>
+<span id="2tt60" class="time jihatsu2" style="color: #fff"><span class="syouyaku">約</span><span class="syoujikan">60</span><span class="syouyaku">分後</span></span> 
+                        </div>
+                    </td>
+                    <td style="width: 450px;"></td>
+                    <td style="width: 350px;"><marquee><span style="color:#fff"><font face="ＭＳ ゴシック">車内での、携帯電話による通話はご遠慮ください。なお、優先座席付近では、混雑時には携帯電話の電源をお切りください。　　　　　　　　　　　　　　皆様にお願いします。車内への危険物の持ち込みは法令で禁止されています。車内ならびに駅構内などで危険物もしくは持ち主不明の不審物を発見されましたら、ただちに係員にご連絡下さいますようお願いします。　　　　　　　　　　　　　　阪急・阪神のグループカード　ＳＴＡＣＩＡ　ＰｉＴａＰａでは、<span style='color:red;'>交通利用</span>で<span style='color:red;'>ポイントを進呈するサービス</span>を実施しております。　便利でお得な<span style='color:red;'>ＳＴＡＣＩＡ　ＰｉＴａＰａ</span>にぜひご入会下さい。　　　　　　　　　　　　　　お年寄りや、お体の不自由な方、妊婦の方、小さなお子様をお連れの方には<span style='color:red;'>座席をお譲り下さい</span>。皆様のご協力をお願いします。　　　　　　　　　　　　　　お客様にお願いいたします。<span style='color:orange;'>発車間際の駆け込み乗車は</span><span style='color:red;'>大変危険</span><span style='color:orange;'>です。また、</span><span style='color:red;'>列車が遅れる原因</span><span style='color:orange;'>にもなるだけでなく、</span><span style='color:red;'>まわりのお客様のご迷惑</span><span style='color:orange;'>にもなります。無理なご乗車は絶対におやめください。</span>ゆとりあるご乗車をおねがいいたします。</font></span></marquee></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
+
+<script src="Elems13.js"></script>
+<script src="Elems131.js"></script>
+<script src="Elems2.js"></script>
+
+
+<script src="1110.js"></script>
+<script src="1120.js"></script>
+<script src="1210.js"></script>
+<script src="1220.js"></script>
+<script src="1310.js"></script>
+<script src="1320.js"></script>
+<script src="1410.js"></script>
+<script src="1420.js"></script>
+<script src="1510.js"></script>
+<script src="1520.js"></script>
+<script src="1610.js"></script>
+<script src="1620.js"></script>
+<script src="1710.js"></script>
+<script src="1720.js"></script>
+<script src="1810.js"></script>
+<script src="1820.js"></script>
+
+<script src="1115.js"></script>
+<script src="1125.js"></script>
+
+<script src="1119.js"></script>
+<script src="1129.js"></script>
+
+<script src="1116.js"></script>
+<script src="1126.js"></script>
+<script src="1216.js"></script>
+<script src="1226.js"></script>
+<script src="1316.js"></script>
+<script src="1326.js"></script>
+<script src="1516.js"></script>
+<script src="1526.js"></script>
+
+<script src="1117.js"></script>
+<script src="1127.js"></script>
+<script src="1417.js"></script>
+<script src="1427.js"></script>
+<script src="1517.js"></script>
+<script src="1527.js"></script>
+<script src="1617.js"></script>
+<script src="1627.js"></script>
+
+<script src="1118.js"></script>
+<script src="1128.js"></script>
+<script src="1218.js"></script>
+<script src="1228.js"></script>
+<script src="1418.js"></script>
+<script src="1428.js"></script>
+<script src="1518.js"></script>
+<script src="1528.js"></script>
+<script src="1618.js"></script>
+<script src="1628.js"></script>
+
+
+
+
+
+
+
+<script src="2110.js"></script>
+<script src="2120.js"></script>
+<script src="2210.js"></script>
+<script src="2220.js"></script>
+<script src="2310.js"></script>
+<script src="2320.js"></script>
+<script src="2410.js"></script>
+<script src="2420.js"></script>
+<script src="2510.js"></script>
+<script src="2520.js"></script>
+<script src="2610.js"></script>
+<script src="2620.js"></script>
+<script src="2710.js"></script>
+<script src="2720.js"></script>
+<script src="2810.js"></script>
+<script src="2820.js"></script>
+
+<script src="2115.js"></script>
+<script src="2125.js"></script>
+
+<script src="2119.js"></script>
+<script src="2129.js"></script>
+
+<script src="2116.js"></script>
+<script src="2126.js"></script>
+<script src="2216.js"></script>
+<script src="2226.js"></script>
+<script src="2316.js"></script>
+<script src="2326.js"></script>
+<script src="2516.js"></script>
+<script src="2526.js"></script>
+
+<script src="2117.js"></script>
+<script src="2127.js"></script>
+<script src="2417.js"></script>
+<script src="2427.js"></script>
+<script src="2517.js"></script>
+<script src="2527.js"></script>
+<script src="2617.js"></script>
+<script src="2627.js"></script>
+
+<script src="2118.js"></script>
+<script src="2128.js"></script>
+<script src="2218.js"></script>
+<script src="2228.js"></script>
+<script src="2418.js"></script>
+<script src="2428.js"></script>
+<script src="2518.js"></script>
+<script src="2528.js"></script>
+<script src="2618.js"></script>
+<script src="2628.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

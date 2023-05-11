@@ -1,0 +1,264 @@
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta name="author" content="" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<title>試験</title>
+<div style="background-color:#0f5aa4; text-align: center;">  
+    <h1><font color="white" face="ＭＳ ゴシック">六甲駅発　平日時刻表</font></h1>
+    <button style="background-color:#0f5aa4; color: #fff; font-size:20px; font-family:ＭＳ ゴシック;" class="button">駅を変更</button>
+</div>
+<head>
+    <link rel="stylesheet" type="text/css" href="blinking.css">
+    <link rel="stylesheet" type="text/css" href="size5.css">
+</head>
+<style>
+    .time1{
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  width: 10%;
+  height: 5%;
+  z-index: 1;
+
+    }
+</style>
+<style>
+    .size6{
+        font-size:100%;
+    }
+</style>
+<style>
+    .size7{
+        font-size:300%;
+    }
+</style>
+<style>
+    .button{
+        position:absolute;
+        top:1.5%;
+        left:5%;
+        border-color: #fff;
+    }
+</style>
+    <style>
+        .kakoi{
+    width:100%; 
+    height:45%; 
+    border: 5px solid #451722;
+    background-color:#c0c0c0;
+}
+    </style>
+    <style>
+        .buttonsize1{
+    top: 10%;
+    left:70%;
+    width: 800px;
+    height: 200px;
+    border: 1px solid #000;
+    background: #3e3e3e;
+    text-align:top;
+}
+    </style>
+
+    <style>
+        .font1{
+    font-family:'ＭＳ 明朝';
+}
+    </style>
+    <style>
+        .font2{
+    font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+}
+    </style>
+<style>
+    .densya{
+  position: absolute;
+  top: 45.22%;
+  left: 25.26%;
+  width: 72.85%;
+  height: 6.4%;
+  z-index: 1;
+
+    }
+</style>
+<style>
+    .densya1{
+  position: absolute;
+  top: 45.22%;
+  left: 20.26%;
+ z-index:1;
+
+    }
+</style>
+<style>
+    .種別iti{
+        position: absolute;
+  top: 12.6%;
+  left: 35.1%;
+  width: 800px;
+  height: 200px;
+  z-index: 1;
+    }
+</style>
+<style>
+    .種別yon{
+        position: absolute;
+  top: 72.6%;
+  left: 35.1%;
+  width: 800px;
+  height: 200px;
+  z-index: 1;
+    }
+</style>
+<style>
+    .jikan{
+  position: absolute;
+  top: 0.5%;
+  left: 85%;
+  width: 15%;
+  height: 2%;
+  text-align: center;
+  z-index: 1;
+  font-size: 30px;
+  font-family:Arial;
+    }
+</style>
+<style>
+    .gousen1{
+        position: absolute;
+        top:14%;
+        left:3%;
+        width:250;
+        height:250;
+
+    }
+</style>
+<style>
+    .gousen4{
+        position: absolute;
+        top:60%;
+        left:3%;
+        width:250;
+        height:250;
+
+    }
+</style>
+<style>
+    .hyou1{
+        position:absolute;
+        top:12%;
+        left:25%;
+    }
+</style>
+<style>
+    .hyou2{
+        position:absolute;
+        top:57.3%;
+        left:25%;
+    }
+</style>
+<style>
+    .annai{
+        position: absolute;
+  top: 40.25%;
+  left: 31%;
+  width: 800px;
+  height: 50px;
+    }
+</style>
+
+<html>
+    <body bgcolor="#451722" style="font-family:ＭＳ ゴシック;">
+        <table  class="jikan" style="color: #fff;">
+            <tr>
+                <td>
+                    <p id="Clock1" style="display: inline"></p>
+                    <script src="時間表示.js"></script>
+                </td>
+            </tr>
+        </table>
+        <img src="1号線.jpg" class="gousen1"> 
+
+    <div class="kakoi" style="text-align: center;"><font size="5"face="ＭＳ ゴシック">大阪梅田</font><font size="3"face="ＭＳ ゴシック">　十三・西宮北口・甲陽園・宝塚・今津・伊丹・京都方面</font>
+            <table border="1" style="border-color: #c0c0c0;background-color: #3e3e3e;" class="hyou1">
+                <tr style="text-align:center;">
+                    <td><span style="color:#fff; font-size: 300%;font-family:Arial;">18:00</span></td>
+                    <td colspan="4">
+                    <button class="buttonsize1" 
+                    onclick="onclick=location.href='file:///D:/html/jr%E5%AE%9D%E5%A1%9A%E7%B7%9A1639.html'" ></button></td>
+                </tr>
+                <tr>
+                    <td height="50" class="size5" style="text-align: center;">
+                        <span id="test0" style="color:#000;background-color:#00ff00;">ご案内</span>
+                                <script src="切替案内1.js"></script>
+                    </td>
+                    <td colspan="3" class="size5">
+                        <span id="annai1" style="color: #fff;">塚口・十三・大阪梅田へは岡本で通勤特急大阪梅田行きに乗り換え</span> 
+                       　　　　　<script src="切替案内010.js"></script>
+                    </td>
+                </tr>
+                <tr style="text-align: center;" height="50" class="size5">
+                    <td><span style="color:#fff;font-family:Arial;font-size:150%;">18:09</span></td>
+                    <td style="width: 450px;">
+                    </td>
+                    <td style="width: 350px;"><marquee><span style="color:#fff"><font face="ＭＳ ゴシック">車内での、携帯電話による通話はご遠慮ください。なお、優先座席付近では、混雑時には携帯電話の電源をお切りください。　　　　　　　　　　　　　　皆様にお願いします。車内への危険物の持ち込みは法令で禁止されています。車内ならびに駅構内などで危険物もしくは持ち主不明の不審物を発見されましたら、ただちに係員にご連絡下さいますようお願いします。　　　　　　　　　　　　　　阪急・阪神のグループカード　ＳＴＡＣＩＡ　ＰｉＴａＰａでは、<span style='color:red;'>交通利用</span>で<span style='color:red;'>ポイントを進呈するサービス</span>を実施しております。　便利でお得な<span style='color:red;'>ＳＴＡＣＩＡ　ＰｉＴａＰａ</span>にぜひご入会下さい。　　　　　　　　　　　　　　お年寄りや、お体の不自由な方、妊婦の方、小さなお子様をお連れの方には<span style='color:red;'>座席をお譲り下さい</span>。皆様のご協力をお願いします。　　　　　　　　　　　　　　お客様にお願いいたします。<span style='color:orange;'>発車間際の駆け込み乗車は</span><span style='color:red;'>大変危険</span><span style='color:orange;'>です。また、</span><span style='color:red;'>列車が遅れる原因</span><span style='color:orange;'>にもなるだけでなく、</span><span style='color:red;'>まわりのお客様のご迷惑</span><span style='color:orange;'>にもなります。無理なご乗車は絶対におやめください。</span>ゆとりあるご乗車をおねがいいたします。</font></span></marquee></td>
+                </tr>
+            </table>
+            <div id="Elems">
+                <img id="elem11" src="普通大阪梅田.jpg" class="種別iti">
+
+        
+
+                                <span id="test1" style="background-color: #000;color: #fff;"　class="densya1">　普通　　大阪梅田</span>
+                                <script src="切替普通大阪.js"></script>
+
+
+
+
+
+                                <span id="elem3" class="annai size5" style="color: #fff;">塚口・十三・大阪梅田へは岡本で<span style="background-color: #f00;">通勤特急</span>大阪梅田行きに乗り換え</span>
+                                <div id="elem30" class="time1">ji</div>
+
+                                <script src="Elems.js"></script>
+                                <script src="Elems2.js"></script>
+
+                                </div>
+        </div>
+    </body>
+</html>
+<html>
+    <body>
+        <img src="4号線.jpg" class="gousen4">
+    <div class="kakoi" style="text-align: center;"><font size="5"face="ＭＳ ゴシック">神戸三宮</font><font size="3"face="ＭＳ ゴシック">　新開地・山陽電鉄線　明石・姫路方面</font>
+            <table border="1" align="right" style="border-color: #c0c0c0;background-color: #3e3e3e;" class="hyou2">
+                <tr style="text-align:center;">
+                    <td><span style="color:#fff; font-size: 300%;font-family:Arial;">18:00</span></td>
+                    <td colspan="4">
+                    <button class="buttonsize1" 
+                    onclick="onclick=location.href='file:///D:/html/jr%E5%AE%9D%E5%A1%9A%E7%B7%9A1639.html'" ></button></td>
+                </tr>
+                <tr>
+                    <td height="50" class="size5" style="text-align: center;">
+                        <span id="test00" style=color:#000;background-color:#00ff00;>ご案内</span>
+                                <script src="切替案内4.js"></script>
+                    </td>
+                    <td colspan="3" class="size5">
+                       <span style="color: #fff;">御影・岡本・芦屋川・夙川・西宮北口・武庫之荘・塚口・十三</span>                       
+                    </td>
+                </tr>
+                <tr style="text-align: center;" height="50" class="size5">
+                    <td><span style="color:#fff;font-family:Arial;font-size:150%;">18:09</span></td>
+                    <td style="width: 450px;">
+                        <span id="test10" style="background-color: #000;color: #fff;">　普通　</span>
+                        <script src="切替普通神戸.js"></script>
+                        <span id="test11" style="color: #fff;">　　神戸三宮</span>
+                        <script src="切替神戸三宮.js"></script>
+                    </td>
+                    <td style="width: 350px;"><marquee><span style="color:#fff"><font face="ＭＳ ゴシック">車内ではマナーを守り、快適な車内環境づくりにご協力をお願いします。</font></span></marquee></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

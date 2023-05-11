@@ -1,0 +1,148 @@
+<meta h1ttp-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta h1ttp-equiv="Content-Style-Type" content="text/css" />
+<meta h1ttp-equiv="Content-Script-Type" content="text/javascript" />
+<meta name="author" content="" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<title>試験</title>
+<div style="background-color:#0f5aa4; text-align: center;">  
+    <h1><font color="white" face="ＭＳ ゴシック">大阪梅田駅発　平日時刻表</font></h1>
+    <button style="background-color:#0f5aa4; color: #fff; font-size:20px; font-family:ＭＳ ゴシック;" class="button"><a href="デモページ.html" style="color: #fff;">駅を変更</a></button>
+</div>
+<head>
+    <link rel="stylesheet" type="text/css" href="a.css">
+    <link rel="stylesheet" type="text/css" href="blinking.css">
+    <link rel="stylesheet" type="text/css" href="size5.css">
+    <link rel="stylesheet" type="text/css" href="time.css">
+    <link rel="stylesheet" type="text/css" href="daiyaku.css">
+    <link rel="stylesheet" type="text/css" href="daijikan.css">
+    <link rel="stylesheet" type="text/css" href="syoyaku.css">
+    <link rel="stylesheet" type="text/css" href="syojikan.css">
+    <link rel="stylesheet" type="text/css" href="font8.css">
+    <link rel="stylesheet" type="text/css" href="font9.css">
+    <link rel="stylesheet" type="text/css" href="button.css">
+    <link rel="stylesheet" type="text/css" href="kakoiosaka-umeda.css">
+    <link rel="stylesheet" type="text/css" href="buttonsize1.css">
+    <link rel="stylesheet" type="text/css" href="densya.css">
+    <link rel="stylesheet" type="text/css" href="densya1.css">
+    <link rel="stylesheet" type="text/css" href="jikan.css">
+    <link rel="stylesheet" type="text/css" href="gousen1.css">
+    <link rel="stylesheet" type="text/css" href="gousen4.css">
+    <link rel="stylesheet" type="text/css" href="hyouosaka-umeda1.css">
+    <link rel="stylesheet" type="text/css" href="annai0.css">
+    <link rel="stylesheet" type="text/css" href="odef1teisya.css">
+    <link rel="stylesheet" type="text/css" href="odef1annai.css">
+    <link rel="stylesheet" type="text/css" href="odef2teisya.css">
+    <link rel="stylesheet" type="text/css" href="odef2annai.css">
+    <link rel="stylesheet" type="text/css" href="odef3teisya.css">
+    <link rel="stylesheet" type="text/css" href="odef3annai.css">
+    <link rel="stylesheet" type="text/css" href="odef4teisya.css">
+    <link rel="stylesheet" type="text/css" href="odef4annai.css">
+    <link rel="stylesheet" type="text/css" href="oteisya1.css">
+    <link rel="stylesheet" type="text/css" href="oteisya2.css">
+    <link rel="stylesheet" type="text/css" href="oteisya3.css">
+    <link rel="stylesheet" type="text/css" href="oteisya4.css">
+    <link rel="stylesheet" type="text/css" href="oannai1.css">
+    <link rel="stylesheet" type="text/css" href="oannai2.css">
+    <link rel="stylesheet" type="text/css" href="oannai3.css">
+    <link rel="stylesheet" type="text/css" href="oannai4.css">
+    <link rel="stylesheet" type="text/css" href="font150.css">
+    <link rel="stylesheet" type="text/css" href="font200.css">
+    <link rel="stylesheet" type="text/css" href="buttonosaka-umeda1.css">
+    <link rel="stylesheet" type="text/css" href="button2.css">
+    <link rel="stylesheet" type="text/css" href="senpatsu1.css">
+    <link rel="stylesheet" type="text/css" href="jihatsu1.css">
+    <link rel="stylesheet" type="text/css" href="senpatsu2.css">
+    <link rel="stylesheet" type="text/css" href="jihatsu2.css">
+    <link rel="stylesheet" type="text/css" href="jihatsu10.css">
+    <link rel="stylesheet" type="text/css" href="moji6.css">
+    <link rel="stylesheet" type="text/css" href="moji7.css">
+    <link rel="stylesheet" type="text/css" href="moji8.css">
+    <link rel="stylesheet" type="text/css" href="moji9.css">
+    <link rel="stylesheet" type="text/css" href="moji10.css">
+    <link rel="stylesheet" type="text/css" href="moji11.css">
+    <link rel="stylesheet" type="text/css" href="moji12.css">
+    <link rel="stylesheet" type="text/css" href="moji13.css">
+    <link rel="stylesheet" type="text/css" href="moji14.css">
+    <link rel="stylesheet" type="text/css" href="moji60.css">
+    <link rel="stylesheet" type="text/css" href="moji70.css">
+    <link rel="stylesheet" type="text/css" href="moji80.css">
+    <link rel="stylesheet" type="text/css" href="moji90.css">
+    <link rel="stylesheet" type="text/css" href="moji100.css">
+    <link rel="stylesheet" type="text/css" href="moji110.css">
+    <link rel="stylesheet" type="text/css" href="moji120.css">
+    <link rel="stylesheet" type="text/css" href="moji130.css">
+    <link rel="stylesheet" type="text/css" href="moji140.css">
+    <link rel="stylesheet" type="text/css" href="電車が発車します1.css">
+    <link rel="stylesheet" type="text/css" href="電車が発車します2.css">
+
+
+
+    
+        
+</head>
+
+<style>
+    .timerHidden{ display: none;}
+    .timerVisible{ display: block;}
+</style>
+
+<html>
+    <body bgcolor="#451722" style="font-family:ＭＳ ゴシック;">
+        <span  class="font8 odef1teisya"><span style="color:#000;background-color:#00ff00;">停車駅</span></span>
+        <span  class="font8 odef1annai"><span style="color:#000;background-color:#00ff00;">ご案内</span></span>
+        <span  class="font8 odef2teisya"><span style="color:#000;background-color:#00ff00;">停車駅</span></span>
+        <span  class="font8 odef2annai"><span style="color:#000;background-color:#00ff00;">ご案内</span></span>
+        <span  class="font8 odef3teisya"><span style="color:#000;background-color:#00ff00;">停車駅</span></span>
+        <span  class="font8 odef3annai"><span style="color:#000;background-color:#00ff00;">ご案内</span></span>
+        <span  class="font8 odef4teisya"><span style="color:#000;background-color:#00ff00;">停車駅</span></span>
+        <span  class="font8 odef4annai"><span style="color:#000;background-color:#00ff00;">ご案内</span></span>
+        <table  class="jikan" style="color: #fff;">
+            <tr>
+                <td>
+                    <p id="Clock1" style="display: inline"></p>
+                    <script src="時間表示.js"></script>
+                </td>
+            </tr>
+        </table>
+    
+    <div class="kakoiosaka-umeda" style="text-align: center;"><font style="font-size:50px;" face="ＭＳ ゴシック">神戸三宮　<font style="font-size:40px;" face="ＭＳ ゴシック">西宮北口・山陽電鉄線・神戸電鉄線方面</font><br><font style="font-size:25px;" face="ＭＳ ゴシック">for Kobe-sannomiya,Nishinomiya-kitaguchi,Sanyo Rwy and Kobe Rwy</font>
+        <table border="1" style="border-color: #c0c0c0;background-color: #3e3e3e;" class="hyouosaka-umeda1">
+            <tr style="text-align:center;"  height="100px" class="size5">
+                <td style="width: 65px;color: #fff;background-color: #f00;"><font style="font-size:40px;" face="ＭＳ ゴシック">先発</font><br><br><font style="font-size:30px;" face="ＭＳ ゴシック">First</font></td>
+                <td style="width: 100px;"></td>
+                <td style="width: 150px;"></td>
+                <td style="width: 400px;"></td>
+                <td style="width: 450px;"></td>
+            </tr>
+            <tr style="text-align: center;" height="100px" class="size5">
+                <td style="width: 65px;color: #fff;background-color: #ff5a00;"><font style="font-size:40px;" face="ＭＳ ゴシック">次発</font><br><br><font style="font-size:30px;" face="ＭＳ ゴシック">Second</font>
+                <td style="width: 100px;"></td>
+                <td style="width: 150px;"></td>
+                <td style="width: 400px;"></td>
+                <td style="width: 450px;"></td>
+            </tr>
+            <tr style="text-align: center;" height="100px" class="size5">
+                <td style="width: 65px;color: #fff;background-color: #ff5a00;"><font style="font-size:30px;" face="ＭＳ ゴシック">次々発</font><br><br><font style="font-size:25px;" face="ＭＳ ゴシック">Third</font>
+                <td style="width: 100px;"></td>
+                <td style="width: 150px;"></td>
+                <td style="width: 400px;"></td>
+                <td style="width: 450px;"></td>
+            </tr>
+            <tr style="text-align: center;" height="100px" class="size5">
+                <td style="width: 65px;color: #000;background-color: #ff0;"><font style="font-size:30px;" face="ＭＳ ゴシック">その次</font><br><br><font style="font-size:25px;" face="ＭＳ ゴシック">Fourth</font>
+                <td style="width: 100px;"></td>
+                <td style="width: 150px;"></td>
+                <td style="width: 400px; color: #fff;"></td>
+                <td style="width: 450px;"></td>
+            </tr>
+            <tr height="50px" class="size5">
+                <td colspan="5">
+                    <marquee scrollamount="11"><span style="color:#fff">車内での、携帯電話による通話はご遠慮ください。なお、優先座席付近では、混雑時には携帯電話の電源をお切りください。　　　　　　　　　　　　　　　　皆様にお願いします。車内への危険物の持ち込みは法令で禁止されています。車内ならびに駅構内などで危険物もしくは持ち主不明の不審物を発見されましたら、ただちに係員にご連絡下さいますようお願いします。　　　　　　　　　　　　　　　　　お年寄りや、お体の不自由な方、妊婦の方、小さなお子様をお連れの方には<span style='color:red;'>座席をお譲り下さい</span>。皆様のご協力をお願いします。　　　　　　　　　　　　　　　　お客様にお願いいたします。<span style='color:orange;'>発車間際の駆け込み乗車は</span><span style='color:red;'>大変危険</span><span style='color:orange;'>です。</span>無理なご乗車は絶対におやめください。</span><span style="color: #fff;">ゆとりあるご乗車をおねがいいたします。</span></marquee>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </body>
+</html>
+<img src="大阪梅田発車します黒.jpg" width="1239.67px" height="50px">
